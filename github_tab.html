@@ -1,0 +1,3109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, '0ebc81e9114a4dc8a99bcae1fa14ecb9')">05_06</button>
+            <button class="tablinks" onclick="showChart(event, 'a034906af64e422998e2431c25ff65ee')">05_07</button>
+            <button class="tablinks" onclick="showChart(event, '2b4dce9be05a4f8cb7b584861e8f1b1e')">05_08</button>
+            <button class="tablinks" onclick="showChart(event, '7963e5c7e75e4fa28adbd5537d1dd937')">05_09</button>
+            <button class="tablinks" onclick="showChart(event, '67f293a386a74352beb29433d7bccb4d')">05_10</button>
+            <button class="tablinks" onclick="showChart(event, '7cc7a74769524adf8c8d1d2a12723ec5')">05_11</button>
+            <button class="tablinks" onclick="showChart(event, '4f593c1ccb3f40bfa1233d289e4fd2bf')">05_13</button>
+            <button class="tablinks" onclick="showChart(event, 'b38d519d83884822924e84535fa83aee')">05_14</button>
+            <button class="tablinks" onclick="showChart(event, '26c98f94d19b4192a76e7f51be40f4b4')">05_15</button>
+            <button class="tablinks" onclick="showChart(event, 'b01c50cc4fdf4c63aecb8a06a971f697')">05_16</button>
+            <button class="tablinks" onclick="showChart(event, '82b837c2a36449e090635ee2170ae513')">05_17</button>
+            <button class="tablinks" onclick="showChart(event, 'c8997ca342004dccb4763d1d8fcaf208')">05_18</button>
+            <button class="tablinks" onclick="showChart(event, '88b79bf56d6443e88f8c1b259ce2ed7d')">05_19</button>
+            <button class="tablinks" onclick="showChart(event, '2db2226ba0cd4b29b06aba74be3e4a46')">05_20</button>
+            <button class="tablinks" onclick="showChart(event, '086b1f8c89604e6aa39c71b553349866')">05_21</button>
+            <button class="tablinks" onclick="showChart(event, '13d506409df249218d99cb8166006f74')">05_23</button>
+            <button class="tablinks" onclick="showChart(event, 'e25741cfd895429792ac816720bfcd14')">05_24</button>
+            <button class="tablinks" onclick="showChart(event, 'ac9dc51813674dd7aa1b4ce3fed22591')">05_25</button>
+            <button class="tablinks" onclick="showChart(event, 'e34d0961baa542ef84ae37a7cfab9a86')">tot</button>
+    </div>
+
+    <div class="box">
+                <div id="0ebc81e9114a4dc8a99bcae1fa14ecb9" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_0ebc81e9114a4dc8a99bcae1fa14ecb9 = echarts.init(
+            document.getElementById('0ebc81e9114a4dc8a99bcae1fa14ecb9'), 'white', {renderer: 'canvas'});
+        var option_0ebc81e9114a4dc8a99bcae1fa14ecb9 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Python",
+                    "value": 4
+                },
+                {
+                    "name": "Go",
+                    "value": 3
+                },
+                {
+                    "name": "Java",
+                    "value": 3
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 2
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 1
+                },
+                {
+                    "name": "Rust",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Python",
+                "Go",
+                "Java",
+                "TypeScript",
+                "JavaScript",
+                "Rust"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_06 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_0ebc81e9114a4dc8a99bcae1fa14ecb9.setOption(option_0ebc81e9114a4dc8a99bcae1fa14ecb9);
+    </script>
+                <div id="a034906af64e422998e2431c25ff65ee" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_a034906af64e422998e2431c25ff65ee = echarts.init(
+            document.getElementById('a034906af64e422998e2431c25ff65ee'), 'white', {renderer: 'canvas'});
+        var option_a034906af64e422998e2431c25ff65ee = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Rust",
+                    "value": 5
+                },
+                {
+                    "name": "Java",
+                    "value": 4
+                },
+                {
+                    "name": "Go",
+                    "value": 4
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 3
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Rust",
+                "Java",
+                "Go",
+                "TypeScript",
+                "JavaScript"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_07 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_a034906af64e422998e2431c25ff65ee.setOption(option_a034906af64e422998e2431c25ff65ee);
+    </script>
+                <div id="2b4dce9be05a4f8cb7b584861e8f1b1e" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_2b4dce9be05a4f8cb7b584861e8f1b1e = echarts.init(
+            document.getElementById('2b4dce9be05a4f8cb7b584861e8f1b1e'), 'white', {renderer: 'canvas'});
+        var option_2b4dce9be05a4f8cb7b584861e8f1b1e = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Rust",
+                    "value": 5
+                },
+                {
+                    "name": "Java",
+                    "value": 4
+                },
+                {
+                    "name": "Go",
+                    "value": 4
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 3
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Rust",
+                "Java",
+                "Go",
+                "TypeScript",
+                "JavaScript"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_08 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_2b4dce9be05a4f8cb7b584861e8f1b1e.setOption(option_2b4dce9be05a4f8cb7b584861e8f1b1e);
+    </script>
+                <div id="7963e5c7e75e4fa28adbd5537d1dd937" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_7963e5c7e75e4fa28adbd5537d1dd937 = echarts.init(
+            document.getElementById('7963e5c7e75e4fa28adbd5537d1dd937'), 'white', {renderer: 'canvas'});
+        var option_7963e5c7e75e4fa28adbd5537d1dd937 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Go",
+                    "value": 6
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 4
+                },
+                {
+                    "name": "Rust",
+                    "value": 3
+                },
+                {
+                    "name": "Python",
+                    "value": 2
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 2
+                },
+                {
+                    "name": "Java",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Go",
+                "TypeScript",
+                "Rust",
+                "Python",
+                "JavaScript",
+                "Java"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_09 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_7963e5c7e75e4fa28adbd5537d1dd937.setOption(option_7963e5c7e75e4fa28adbd5537d1dd937);
+    </script>
+                <div id="67f293a386a74352beb29433d7bccb4d" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_67f293a386a74352beb29433d7bccb4d = echarts.init(
+            document.getElementById('67f293a386a74352beb29433d7bccb4d'), 'white', {renderer: 'canvas'});
+        var option_67f293a386a74352beb29433d7bccb4d = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Go",
+                    "value": 4
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 3
+                },
+                {
+                    "name": "Python",
+                    "value": 3
+                },
+                {
+                    "name": "Rust",
+                    "value": 2
+                },
+                {
+                    "name": "C++",
+                    "value": 2
+                },
+                {
+                    "name": "Java",
+                    "value": 1
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Go",
+                "JavaScript",
+                "Python",
+                "Rust",
+                "C++",
+                "Java",
+                "TypeScript"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_10 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_67f293a386a74352beb29433d7bccb4d.setOption(option_67f293a386a74352beb29433d7bccb4d);
+    </script>
+                <div id="7cc7a74769524adf8c8d1d2a12723ec5" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_7cc7a74769524adf8c8d1d2a12723ec5 = echarts.init(
+            document.getElementById('7cc7a74769524adf8c8d1d2a12723ec5'), 'white', {renderer: 'canvas'});
+        var option_7cc7a74769524adf8c8d1d2a12723ec5 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Go",
+                    "value": 4
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 3
+                },
+                {
+                    "name": "Python",
+                    "value": 2
+                },
+                {
+                    "name": "Java",
+                    "value": 1
+                },
+                {
+                    "name": "Rust",
+                    "value": 1
+                },
+                {
+                    "name": "C++",
+                    "value": 1
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Go",
+                "JavaScript",
+                "Python",
+                "Java",
+                "Rust",
+                "C++",
+                "TypeScript"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_11 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_7cc7a74769524adf8c8d1d2a12723ec5.setOption(option_7cc7a74769524adf8c8d1d2a12723ec5);
+    </script>
+                <div id="4f593c1ccb3f40bfa1233d289e4fd2bf" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_4f593c1ccb3f40bfa1233d289e4fd2bf = echarts.init(
+            document.getElementById('4f593c1ccb3f40bfa1233d289e4fd2bf'), 'white', {renderer: 'canvas'});
+        var option_4f593c1ccb3f40bfa1233d289e4fd2bf = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Python",
+                    "value": 5
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 3
+                },
+                {
+                    "name": "Go",
+                    "value": 2
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 2
+                },
+                {
+                    "name": "C++",
+                    "value": 1
+                },
+                {
+                    "name": "Java",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Python",
+                "JavaScript",
+                "Go",
+                "TypeScript",
+                "C++",
+                "Java"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_13 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_4f593c1ccb3f40bfa1233d289e4fd2bf.setOption(option_4f593c1ccb3f40bfa1233d289e4fd2bf);
+    </script>
+                <div id="b38d519d83884822924e84535fa83aee" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_b38d519d83884822924e84535fa83aee = echarts.init(
+            document.getElementById('b38d519d83884822924e84535fa83aee'), 'white', {renderer: 'canvas'});
+        var option_b38d519d83884822924e84535fa83aee = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Python",
+                    "value": 5
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 3
+                },
+                {
+                    "name": "Go",
+                    "value": 2
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 2
+                },
+                {
+                    "name": "C++",
+                    "value": 1
+                },
+                {
+                    "name": "Java",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Python",
+                "JavaScript",
+                "Go",
+                "TypeScript",
+                "C++",
+                "Java"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_14 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_b38d519d83884822924e84535fa83aee.setOption(option_b38d519d83884822924e84535fa83aee);
+    </script>
+                <div id="26c98f94d19b4192a76e7f51be40f4b4" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_26c98f94d19b4192a76e7f51be40f4b4 = echarts.init(
+            document.getElementById('26c98f94d19b4192a76e7f51be40f4b4'), 'white', {renderer: 'canvas'});
+        var option_26c98f94d19b4192a76e7f51be40f4b4 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Python",
+                    "value": 5
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 3
+                },
+                {
+                    "name": "Go",
+                    "value": 2
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 2
+                },
+                {
+                    "name": "C++",
+                    "value": 1
+                },
+                {
+                    "name": "Java",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Python",
+                "JavaScript",
+                "Go",
+                "TypeScript",
+                "C++",
+                "Java"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_15 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_26c98f94d19b4192a76e7f51be40f4b4.setOption(option_26c98f94d19b4192a76e7f51be40f4b4);
+    </script>
+                <div id="b01c50cc4fdf4c63aecb8a06a971f697" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_b01c50cc4fdf4c63aecb8a06a971f697 = echarts.init(
+            document.getElementById('b01c50cc4fdf4c63aecb8a06a971f697'), 'white', {renderer: 'canvas'});
+        var option_b01c50cc4fdf4c63aecb8a06a971f697 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "JavaScript",
+                    "value": 3
+                },
+                {
+                    "name": "Rust",
+                    "value": 2
+                },
+                {
+                    "name": "Python",
+                    "value": 2
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 2
+                },
+                {
+                    "name": "C++",
+                    "value": 1
+                },
+                {
+                    "name": "Java",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "JavaScript",
+                "Rust",
+                "Python",
+                "TypeScript",
+                "C++",
+                "Java"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_16 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_b01c50cc4fdf4c63aecb8a06a971f697.setOption(option_b01c50cc4fdf4c63aecb8a06a971f697);
+    </script>
+                <div id="82b837c2a36449e090635ee2170ae513" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_82b837c2a36449e090635ee2170ae513 = echarts.init(
+            document.getElementById('82b837c2a36449e090635ee2170ae513'), 'white', {renderer: 'canvas'});
+        var option_82b837c2a36449e090635ee2170ae513 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Go",
+                    "value": 4
+                },
+                {
+                    "name": "Rust",
+                    "value": 2
+                },
+                {
+                    "name": "Python",
+                    "value": 2
+                },
+                {
+                    "name": "Java",
+                    "value": 2
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 2
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 1
+                },
+                {
+                    "name": "C++",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Go",
+                "Rust",
+                "Python",
+                "Java",
+                "JavaScript",
+                "TypeScript",
+                "C++"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_17 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_82b837c2a36449e090635ee2170ae513.setOption(option_82b837c2a36449e090635ee2170ae513);
+    </script>
+                <div id="c8997ca342004dccb4763d1d8fcaf208" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_c8997ca342004dccb4763d1d8fcaf208 = echarts.init(
+            document.getElementById('c8997ca342004dccb4763d1d8fcaf208'), 'white', {renderer: 'canvas'});
+        var option_c8997ca342004dccb4763d1d8fcaf208 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Python",
+                    "value": 4
+                },
+                {
+                    "name": "Rust",
+                    "value": 3
+                },
+                {
+                    "name": "C++",
+                    "value": 2
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 1
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 1
+                },
+                {
+                    "name": "Go",
+                    "value": 1
+                },
+                {
+                    "name": "Java",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Python",
+                "Rust",
+                "C++",
+                "TypeScript",
+                "JavaScript",
+                "Go",
+                "Java"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_18 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_c8997ca342004dccb4763d1d8fcaf208.setOption(option_c8997ca342004dccb4763d1d8fcaf208);
+    </script>
+                <div id="88b79bf56d6443e88f8c1b259ce2ed7d" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_88b79bf56d6443e88f8c1b259ce2ed7d = echarts.init(
+            document.getElementById('88b79bf56d6443e88f8c1b259ce2ed7d'), 'white', {renderer: 'canvas'});
+        var option_88b79bf56d6443e88f8c1b259ce2ed7d = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Python",
+                    "value": 5
+                },
+                {
+                    "name": "Go",
+                    "value": 4
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 2
+                },
+                {
+                    "name": "Rust",
+                    "value": 1
+                },
+                {
+                    "name": "C++",
+                    "value": 1
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Python",
+                "Go",
+                "JavaScript",
+                "Rust",
+                "C++",
+                "TypeScript"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_19 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_88b79bf56d6443e88f8c1b259ce2ed7d.setOption(option_88b79bf56d6443e88f8c1b259ce2ed7d);
+    </script>
+                <div id="2db2226ba0cd4b29b06aba74be3e4a46" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_2db2226ba0cd4b29b06aba74be3e4a46 = echarts.init(
+            document.getElementById('2db2226ba0cd4b29b06aba74be3e4a46'), 'white', {renderer: 'canvas'});
+        var option_2db2226ba0cd4b29b06aba74be3e4a46 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Go",
+                    "value": 6
+                },
+                {
+                    "name": "Python",
+                    "value": 4
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 2
+                },
+                {
+                    "name": "C++",
+                    "value": 2
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Go",
+                "Python",
+                "JavaScript",
+                "C++"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_20 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_2db2226ba0cd4b29b06aba74be3e4a46.setOption(option_2db2226ba0cd4b29b06aba74be3e4a46);
+    </script>
+                <div id="086b1f8c89604e6aa39c71b553349866" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_086b1f8c89604e6aa39c71b553349866 = echarts.init(
+            document.getElementById('086b1f8c89604e6aa39c71b553349866'), 'white', {renderer: 'canvas'});
+        var option_086b1f8c89604e6aa39c71b553349866 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Python",
+                    "value": 5
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 3
+                },
+                {
+                    "name": "C++",
+                    "value": 2
+                },
+                {
+                    "name": "Go",
+                    "value": 2
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 1
+                },
+                {
+                    "name": "Rust",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Python",
+                "TypeScript",
+                "C++",
+                "Go",
+                "JavaScript",
+                "Rust"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_21 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_086b1f8c89604e6aa39c71b553349866.setOption(option_086b1f8c89604e6aa39c71b553349866);
+    </script>
+                <div id="13d506409df249218d99cb8166006f74" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_13d506409df249218d99cb8166006f74 = echarts.init(
+            document.getElementById('13d506409df249218d99cb8166006f74'), 'white', {renderer: 'canvas'});
+        var option_13d506409df249218d99cb8166006f74 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "JavaScript",
+                    "value": 4
+                },
+                {
+                    "name": "Python",
+                    "value": 3
+                },
+                {
+                    "name": "Java",
+                    "value": 2
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 2
+                },
+                {
+                    "name": "Rust",
+                    "value": 2
+                },
+                {
+                    "name": "C++",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "JavaScript",
+                "Python",
+                "Java",
+                "TypeScript",
+                "Rust",
+                "C++"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_23 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_13d506409df249218d99cb8166006f74.setOption(option_13d506409df249218d99cb8166006f74);
+    </script>
+                <div id="e25741cfd895429792ac816720bfcd14" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_e25741cfd895429792ac816720bfcd14 = echarts.init(
+            document.getElementById('e25741cfd895429792ac816720bfcd14'), 'white', {renderer: 'canvas'});
+        var option_e25741cfd895429792ac816720bfcd14 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "JavaScript",
+                    "value": 6
+                },
+                {
+                    "name": "Rust",
+                    "value": 4
+                },
+                {
+                    "name": "Python",
+                    "value": 3
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 2
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "JavaScript",
+                "Rust",
+                "Python",
+                "TypeScript"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_24 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_e25741cfd895429792ac816720bfcd14.setOption(option_e25741cfd895429792ac816720bfcd14);
+    </script>
+                <div id="ac9dc51813674dd7aa1b4ce3fed22591" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_ac9dc51813674dd7aa1b4ce3fed22591 = echarts.init(
+            document.getElementById('ac9dc51813674dd7aa1b4ce3fed22591'), 'white', {renderer: 'canvas'});
+        var option_ac9dc51813674dd7aa1b4ce3fed22591 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "JavaScript",
+                    "value": 8
+                },
+                {
+                    "name": "Rust",
+                    "value": 3
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 1
+                },
+                {
+                    "name": "Java",
+                    "value": 1
+                },
+                {
+                    "name": "Python",
+                    "value": 1
+                },
+                {
+                    "name": "Go",
+                    "value": 1
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "JavaScript",
+                "Rust",
+                "TypeScript",
+                "Java",
+                "Python",
+                "Go"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  05_25 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_ac9dc51813674dd7aa1b4ce3fed22591.setOption(option_ac9dc51813674dd7aa1b4ce3fed22591);
+    </script>
+                <div id="e34d0961baa542ef84ae37a7cfab9a86" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_e34d0961baa542ef84ae37a7cfab9a86 = echarts.init(
+            document.getElementById('e34d0961baa542ef84ae37a7cfab9a86'), 'white', {renderer: 'canvas'});
+        var option_e34d0961baa542ef84ae37a7cfab9a86 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "Python",
+                    "value": 55
+                },
+                {
+                    "name": "Go",
+                    "value": 49
+                },
+                {
+                    "name": "JavaScript",
+                    "value": 49
+                },
+                {
+                    "name": "Rust",
+                    "value": 35
+                },
+                {
+                    "name": "TypeScript",
+                    "value": 33
+                },
+                {
+                    "name": "Java",
+                    "value": 24
+                },
+                {
+                    "name": "C++",
+                    "value": 16
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "Python",
+                "Go",
+                "JavaScript",
+                "Rust",
+                "TypeScript",
+                "Java",
+                "C++"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": "github  tot \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_e34d0961baa542ef84ae37a7cfab9a86.setOption(option_e34d0961baa542ef84ae37a7cfab9a86);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

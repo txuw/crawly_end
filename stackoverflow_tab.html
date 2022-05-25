@@ -1,0 +1,3209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+    
+</head>
+<body>
+        <style>
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 12px 16px;
+            transition: 0.3s;
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .chart-container {
+            display: none;
+            padding: 6px 12px;
+            border-top: none;
+        }
+    </style>
+    <div class="tab">
+            <button class="tablinks" onclick="showChart(event, 'f52e3ab2f53a420ebbddb9140b6a09ab')">05_06</button>
+            <button class="tablinks" onclick="showChart(event, '7af4930c84e14a909a9d724679602ee5')">05_07</button>
+            <button class="tablinks" onclick="showChart(event, 'e9d826b599ed436fbe1205e6e25fba19')">05_08</button>
+            <button class="tablinks" onclick="showChart(event, '80fb39f453a24df19de6a648be99f801')">05_09</button>
+            <button class="tablinks" onclick="showChart(event, 'fcd110972fed49b4ac37bc8ad545d539')">05_10</button>
+            <button class="tablinks" onclick="showChart(event, 'e872ac4b839744328c9d3371248ca823')">05_11</button>
+            <button class="tablinks" onclick="showChart(event, 'a9f8b776cf9d4d0bb3a5064c20722014')">05_13</button>
+            <button class="tablinks" onclick="showChart(event, 'abd59c11f7e1436995c212c112305f76')">05_14</button>
+            <button class="tablinks" onclick="showChart(event, '453468f9227845ed93580ef240d1dbef')">05_15</button>
+            <button class="tablinks" onclick="showChart(event, '9b47946123d94c52ac21efc457cfe0f6')">05_16</button>
+            <button class="tablinks" onclick="showChart(event, 'fbef3034ae15411382418871356de380')">05_17</button>
+            <button class="tablinks" onclick="showChart(event, '1b8a0184da9149f4be8aec8c16b6ff9c')">05_18</button>
+            <button class="tablinks" onclick="showChart(event, 'ac8d4d1968f54d21a2e39e644d141495')">05_19</button>
+            <button class="tablinks" onclick="showChart(event, 'a68f1290e4144cbebd4ce5cd62915dc5')">05_20</button>
+            <button class="tablinks" onclick="showChart(event, '2af48a2431494a4aa25339599de2c5bf')">05_21</button>
+            <button class="tablinks" onclick="showChart(event, 'd0b4146c31b84dfa90a617d36c6be432')">05_23</button>
+            <button class="tablinks" onclick="showChart(event, '1679943a254b4adeb3ee58887dfc1f5a')">05_24</button>
+            <button class="tablinks" onclick="showChart(event, 'b959a6d8eae742d799fe378a9f8deeaf')">05_25</button>
+            <button class="tablinks" onclick="showChart(event, '7f22ec756ef847aea99952be1a4257ab')">tot</button>
+    </div>
+
+    <div class="box">
+                <div id="f52e3ab2f53a420ebbddb9140b6a09ab" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_f52e3ab2f53a420ebbddb9140b6a09ab = echarts.init(
+            document.getElementById('f52e3ab2f53a420ebbddb9140b6a09ab'), 'white', {renderer: 'canvas'});
+        var option_f52e3ab2f53a420ebbddb9140b6a09ab = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "javascript",
+                    "value": 22
+                },
+                {
+                    "name": "python",
+                    "value": 18
+                },
+                {
+                    "name": "java",
+                    "value": 9
+                },
+                {
+                    "name": "html",
+                    "value": 7
+                },
+                {
+                    "name": "c++",
+                    "value": 5
+                },
+                {
+                    "name": "reactjs",
+                    "value": 5
+                },
+                {
+                    "name": "pandas",
+                    "value": 2
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "javascript",
+                "python",
+                "java",
+                "html",
+                "c++",
+                "reactjs",
+                "pandas"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_06 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_f52e3ab2f53a420ebbddb9140b6a09ab.setOption(option_f52e3ab2f53a420ebbddb9140b6a09ab);
+    </script>
+                <div id="7af4930c84e14a909a9d724679602ee5" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_7af4930c84e14a909a9d724679602ee5 = echarts.init(
+            document.getElementById('7af4930c84e14a909a9d724679602ee5'), 'white', {renderer: 'canvas'});
+        var option_7af4930c84e14a909a9d724679602ee5 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 25
+                },
+                {
+                    "name": "javascript",
+                    "value": 12
+                },
+                {
+                    "name": "html",
+                    "value": 11
+                },
+                {
+                    "name": "java",
+                    "value": 9
+                },
+                {
+                    "name": "pandas",
+                    "value": 7
+                },
+                {
+                    "name": "reactjs",
+                    "value": 6
+                },
+                {
+                    "name": "c++",
+                    "value": 6
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "html",
+                "java",
+                "pandas",
+                "reactjs",
+                "c++"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_07 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_7af4930c84e14a909a9d724679602ee5.setOption(option_7af4930c84e14a909a9d724679602ee5);
+    </script>
+                <div id="e9d826b599ed436fbe1205e6e25fba19" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_e9d826b599ed436fbe1205e6e25fba19 = echarts.init(
+            document.getElementById('e9d826b599ed436fbe1205e6e25fba19'), 'white', {renderer: 'canvas'});
+        var option_e9d826b599ed436fbe1205e6e25fba19 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 25
+                },
+                {
+                    "name": "javascript",
+                    "value": 16
+                },
+                {
+                    "name": "reactjs",
+                    "value": 15
+                },
+                {
+                    "name": "java",
+                    "value": 13
+                },
+                {
+                    "name": "c++",
+                    "value": 5
+                },
+                {
+                    "name": "pandas",
+                    "value": 5
+                },
+                {
+                    "name": "html",
+                    "value": 5
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "reactjs",
+                "java",
+                "c++",
+                "pandas",
+                "html"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_08 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_e9d826b599ed436fbe1205e6e25fba19.setOption(option_e9d826b599ed436fbe1205e6e25fba19);
+    </script>
+                <div id="80fb39f453a24df19de6a648be99f801" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_80fb39f453a24df19de6a648be99f801 = echarts.init(
+            document.getElementById('80fb39f453a24df19de6a648be99f801'), 'white', {renderer: 'canvas'});
+        var option_80fb39f453a24df19de6a648be99f801 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 20
+                },
+                {
+                    "name": "javascript",
+                    "value": 19
+                },
+                {
+                    "name": "c++",
+                    "value": 11
+                },
+                {
+                    "name": "reactjs",
+                    "value": 9
+                },
+                {
+                    "name": "java",
+                    "value": 8
+                },
+                {
+                    "name": "pandas",
+                    "value": 4
+                },
+                {
+                    "name": "html",
+                    "value": 3
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "c++",
+                "reactjs",
+                "java",
+                "pandas",
+                "html"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_09 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_80fb39f453a24df19de6a648be99f801.setOption(option_80fb39f453a24df19de6a648be99f801);
+    </script>
+                <div id="fcd110972fed49b4ac37bc8ad545d539" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_fcd110972fed49b4ac37bc8ad545d539 = echarts.init(
+            document.getElementById('fcd110972fed49b4ac37bc8ad545d539'), 'white', {renderer: 'canvas'});
+        var option_fcd110972fed49b4ac37bc8ad545d539 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 24
+                },
+                {
+                    "name": "javascript",
+                    "value": 16
+                },
+                {
+                    "name": "html",
+                    "value": 10
+                },
+                {
+                    "name": "c++",
+                    "value": 10
+                },
+                {
+                    "name": "reactjs",
+                    "value": 8
+                },
+                {
+                    "name": "java",
+                    "value": 5
+                },
+                {
+                    "name": "pandas",
+                    "value": 4
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "html",
+                "c++",
+                "reactjs",
+                "java",
+                "pandas"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_10 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_fcd110972fed49b4ac37bc8ad545d539.setOption(option_fcd110972fed49b4ac37bc8ad545d539);
+    </script>
+                <div id="e872ac4b839744328c9d3371248ca823" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_e872ac4b839744328c9d3371248ca823 = echarts.init(
+            document.getElementById('e872ac4b839744328c9d3371248ca823'), 'white', {renderer: 'canvas'});
+        var option_e872ac4b839744328c9d3371248ca823 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 25
+                },
+                {
+                    "name": "javascript",
+                    "value": 23
+                },
+                {
+                    "name": "java",
+                    "value": 9
+                },
+                {
+                    "name": "reactjs",
+                    "value": 6
+                },
+                {
+                    "name": "html",
+                    "value": 6
+                },
+                {
+                    "name": "c++",
+                    "value": 3
+                },
+                {
+                    "name": "pandas",
+                    "value": 3
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "java",
+                "reactjs",
+                "html",
+                "c++",
+                "pandas"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_11 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_e872ac4b839744328c9d3371248ca823.setOption(option_e872ac4b839744328c9d3371248ca823);
+    </script>
+                <div id="a9f8b776cf9d4d0bb3a5064c20722014" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_a9f8b776cf9d4d0bb3a5064c20722014 = echarts.init(
+            document.getElementById('a9f8b776cf9d4d0bb3a5064c20722014'), 'white', {renderer: 'canvas'});
+        var option_a9f8b776cf9d4d0bb3a5064c20722014 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 27
+                },
+                {
+                    "name": "javascript",
+                    "value": 26
+                },
+                {
+                    "name": "html",
+                    "value": 10
+                },
+                {
+                    "name": "reactjs",
+                    "value": 7
+                },
+                {
+                    "name": "java",
+                    "value": 6
+                },
+                {
+                    "name": "pandas",
+                    "value": 5
+                },
+                {
+                    "name": "c++",
+                    "value": 3
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "html",
+                "reactjs",
+                "java",
+                "pandas",
+                "c++"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_13 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_a9f8b776cf9d4d0bb3a5064c20722014.setOption(option_a9f8b776cf9d4d0bb3a5064c20722014);
+    </script>
+                <div id="abd59c11f7e1436995c212c112305f76" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_abd59c11f7e1436995c212c112305f76 = echarts.init(
+            document.getElementById('abd59c11f7e1436995c212c112305f76'), 'white', {renderer: 'canvas'});
+        var option_abd59c11f7e1436995c212c112305f76 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 19
+                },
+                {
+                    "name": "javascript",
+                    "value": 17
+                },
+                {
+                    "name": "java",
+                    "value": 8
+                },
+                {
+                    "name": "html",
+                    "value": 7
+                },
+                {
+                    "name": "reactjs",
+                    "value": 6
+                },
+                {
+                    "name": "c++",
+                    "value": 4
+                },
+                {
+                    "name": "pandas",
+                    "value": 3
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "java",
+                "html",
+                "reactjs",
+                "c++",
+                "pandas"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_14 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_abd59c11f7e1436995c212c112305f76.setOption(option_abd59c11f7e1436995c212c112305f76);
+    </script>
+                <div id="453468f9227845ed93580ef240d1dbef" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_453468f9227845ed93580ef240d1dbef = echarts.init(
+            document.getElementById('453468f9227845ed93580ef240d1dbef'), 'white', {renderer: 'canvas'});
+        var option_453468f9227845ed93580ef240d1dbef = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 22
+                },
+                {
+                    "name": "javascript",
+                    "value": 22
+                },
+                {
+                    "name": "c++",
+                    "value": 16
+                },
+                {
+                    "name": "pandas",
+                    "value": 7
+                },
+                {
+                    "name": "java",
+                    "value": 6
+                },
+                {
+                    "name": "html",
+                    "value": 4
+                },
+                {
+                    "name": "reactjs",
+                    "value": 3
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "c++",
+                "pandas",
+                "java",
+                "html",
+                "reactjs"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_15 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_453468f9227845ed93580ef240d1dbef.setOption(option_453468f9227845ed93580ef240d1dbef);
+    </script>
+                <div id="9b47946123d94c52ac21efc457cfe0f6" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_9b47946123d94c52ac21efc457cfe0f6 = echarts.init(
+            document.getElementById('9b47946123d94c52ac21efc457cfe0f6'), 'white', {renderer: 'canvas'});
+        var option_9b47946123d94c52ac21efc457cfe0f6 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 22
+                },
+                {
+                    "name": "javascript",
+                    "value": 17
+                },
+                {
+                    "name": "java",
+                    "value": 11
+                },
+                {
+                    "name": "pandas",
+                    "value": 9
+                },
+                {
+                    "name": "c++",
+                    "value": 6
+                },
+                {
+                    "name": "reactjs",
+                    "value": 4
+                },
+                {
+                    "name": "html",
+                    "value": 4
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "java",
+                "pandas",
+                "c++",
+                "reactjs",
+                "html"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_16 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_9b47946123d94c52ac21efc457cfe0f6.setOption(option_9b47946123d94c52ac21efc457cfe0f6);
+    </script>
+                <div id="fbef3034ae15411382418871356de380" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_fbef3034ae15411382418871356de380 = echarts.init(
+            document.getElementById('fbef3034ae15411382418871356de380'), 'white', {renderer: 'canvas'});
+        var option_fbef3034ae15411382418871356de380 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 20
+                },
+                {
+                    "name": "javascript",
+                    "value": 16
+                },
+                {
+                    "name": "c++",
+                    "value": 8
+                },
+                {
+                    "name": "html",
+                    "value": 8
+                },
+                {
+                    "name": "java",
+                    "value": 7
+                },
+                {
+                    "name": "reactjs",
+                    "value": 6
+                },
+                {
+                    "name": "pandas",
+                    "value": 3
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "c++",
+                "html",
+                "java",
+                "reactjs",
+                "pandas"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_17 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_fbef3034ae15411382418871356de380.setOption(option_fbef3034ae15411382418871356de380);
+    </script>
+                <div id="1b8a0184da9149f4be8aec8c16b6ff9c" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_1b8a0184da9149f4be8aec8c16b6ff9c = echarts.init(
+            document.getElementById('1b8a0184da9149f4be8aec8c16b6ff9c'), 'white', {renderer: 'canvas'});
+        var option_1b8a0184da9149f4be8aec8c16b6ff9c = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 24
+                },
+                {
+                    "name": "javascript",
+                    "value": 22
+                },
+                {
+                    "name": "c++",
+                    "value": 7
+                },
+                {
+                    "name": "reactjs",
+                    "value": 7
+                },
+                {
+                    "name": "java",
+                    "value": 5
+                },
+                {
+                    "name": "pandas",
+                    "value": 4
+                },
+                {
+                    "name": "html",
+                    "value": 4
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "c++",
+                "reactjs",
+                "java",
+                "pandas",
+                "html"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_18 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_1b8a0184da9149f4be8aec8c16b6ff9c.setOption(option_1b8a0184da9149f4be8aec8c16b6ff9c);
+    </script>
+                <div id="ac8d4d1968f54d21a2e39e644d141495" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_ac8d4d1968f54d21a2e39e644d141495 = echarts.init(
+            document.getElementById('ac8d4d1968f54d21a2e39e644d141495'), 'white', {renderer: 'canvas'});
+        var option_ac8d4d1968f54d21a2e39e644d141495 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 22
+                },
+                {
+                    "name": "javascript",
+                    "value": 16
+                },
+                {
+                    "name": "java",
+                    "value": 12
+                },
+                {
+                    "name": "html",
+                    "value": 9
+                },
+                {
+                    "name": "c++",
+                    "value": 7
+                },
+                {
+                    "name": "reactjs",
+                    "value": 4
+                },
+                {
+                    "name": "pandas",
+                    "value": 2
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "java",
+                "html",
+                "c++",
+                "reactjs",
+                "pandas"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_19 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_ac8d4d1968f54d21a2e39e644d141495.setOption(option_ac8d4d1968f54d21a2e39e644d141495);
+    </script>
+                <div id="a68f1290e4144cbebd4ce5cd62915dc5" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_a68f1290e4144cbebd4ce5cd62915dc5 = echarts.init(
+            document.getElementById('a68f1290e4144cbebd4ce5cd62915dc5'), 'white', {renderer: 'canvas'});
+        var option_a68f1290e4144cbebd4ce5cd62915dc5 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 27
+                },
+                {
+                    "name": "javascript",
+                    "value": 10
+                },
+                {
+                    "name": "html",
+                    "value": 10
+                },
+                {
+                    "name": "java",
+                    "value": 9
+                },
+                {
+                    "name": "c++",
+                    "value": 8
+                },
+                {
+                    "name": "reactjs",
+                    "value": 6
+                },
+                {
+                    "name": "pandas",
+                    "value": 5
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "html",
+                "java",
+                "c++",
+                "reactjs",
+                "pandas"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_20 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_a68f1290e4144cbebd4ce5cd62915dc5.setOption(option_a68f1290e4144cbebd4ce5cd62915dc5);
+    </script>
+                <div id="2af48a2431494a4aa25339599de2c5bf" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_2af48a2431494a4aa25339599de2c5bf = echarts.init(
+            document.getElementById('2af48a2431494a4aa25339599de2c5bf'), 'white', {renderer: 'canvas'});
+        var option_2af48a2431494a4aa25339599de2c5bf = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 23
+                },
+                {
+                    "name": "javascript",
+                    "value": 11
+                },
+                {
+                    "name": "c++",
+                    "value": 8
+                },
+                {
+                    "name": "java",
+                    "value": 7
+                },
+                {
+                    "name": "html",
+                    "value": 7
+                },
+                {
+                    "name": "pandas",
+                    "value": 4
+                },
+                {
+                    "name": "reactjs",
+                    "value": 3
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "c++",
+                "java",
+                "html",
+                "pandas",
+                "reactjs"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_21 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_2af48a2431494a4aa25339599de2c5bf.setOption(option_2af48a2431494a4aa25339599de2c5bf);
+    </script>
+                <div id="d0b4146c31b84dfa90a617d36c6be432" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_d0b4146c31b84dfa90a617d36c6be432 = echarts.init(
+            document.getElementById('d0b4146c31b84dfa90a617d36c6be432'), 'white', {renderer: 'canvas'});
+        var option_d0b4146c31b84dfa90a617d36c6be432 = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 27
+                },
+                {
+                    "name": "javascript",
+                    "value": 18
+                },
+                {
+                    "name": "c++",
+                    "value": 7
+                },
+                {
+                    "name": "reactjs",
+                    "value": 7
+                },
+                {
+                    "name": "html",
+                    "value": 6
+                },
+                {
+                    "name": "pandas",
+                    "value": 5
+                },
+                {
+                    "name": "java",
+                    "value": 5
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "c++",
+                "reactjs",
+                "html",
+                "pandas",
+                "java"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_23 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_d0b4146c31b84dfa90a617d36c6be432.setOption(option_d0b4146c31b84dfa90a617d36c6be432);
+    </script>
+                <div id="1679943a254b4adeb3ee58887dfc1f5a" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_1679943a254b4adeb3ee58887dfc1f5a = echarts.init(
+            document.getElementById('1679943a254b4adeb3ee58887dfc1f5a'), 'white', {renderer: 'canvas'});
+        var option_1679943a254b4adeb3ee58887dfc1f5a = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "javascript",
+                    "value": 23
+                },
+                {
+                    "name": "python",
+                    "value": 19
+                },
+                {
+                    "name": "reactjs",
+                    "value": 12
+                },
+                {
+                    "name": "html",
+                    "value": 10
+                },
+                {
+                    "name": "java",
+                    "value": 7
+                },
+                {
+                    "name": "pandas",
+                    "value": 4
+                },
+                {
+                    "name": "c++",
+                    "value": 3
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "javascript",
+                "python",
+                "reactjs",
+                "html",
+                "java",
+                "pandas",
+                "c++"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_24 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_1679943a254b4adeb3ee58887dfc1f5a.setOption(option_1679943a254b4adeb3ee58887dfc1f5a);
+    </script>
+                <div id="b959a6d8eae742d799fe378a9f8deeaf" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_b959a6d8eae742d799fe378a9f8deeaf = echarts.init(
+            document.getElementById('b959a6d8eae742d799fe378a9f8deeaf'), 'white', {renderer: 'canvas'});
+        var option_b959a6d8eae742d799fe378a9f8deeaf = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "javascript",
+                    "value": 22
+                },
+                {
+                    "name": "python",
+                    "value": 20
+                },
+                {
+                    "name": "c++",
+                    "value": 7
+                },
+                {
+                    "name": "java",
+                    "value": 6
+                },
+                {
+                    "name": "pandas",
+                    "value": 5
+                },
+                {
+                    "name": "reactjs",
+                    "value": 5
+                },
+                {
+                    "name": "html",
+                    "value": 3
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "javascript",
+                "python",
+                "c++",
+                "java",
+                "pandas",
+                "reactjs",
+                "html"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  05_25 \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_b959a6d8eae742d799fe378a9f8deeaf.setOption(option_b959a6d8eae742d799fe378a9f8deeaf);
+    </script>
+                <div id="7f22ec756ef847aea99952be1a4257ab" class="chart-container" style="width:800px; height:800px;"></div>
+    <script>
+        var chart_7f22ec756ef847aea99952be1a4257ab = echarts.init(
+            document.getElementById('7f22ec756ef847aea99952be1a4257ab'), 'white', {renderer: 'canvas'});
+        var option_7f22ec756ef847aea99952be1a4257ab = {
+    "backgroundColor": "#ffffff",
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "pie",
+            "name": "\u6570\u636e",
+            "clockwise": true,
+            "data": [
+                {
+                    "name": "python",
+                    "value": 409
+                },
+                {
+                    "name": "javascript",
+                    "value": 328
+                },
+                {
+                    "name": "java",
+                    "value": 142
+                },
+                {
+                    "name": "html",
+                    "value": 124
+                },
+                {
+                    "name": "c++",
+                    "value": 124
+                },
+                {
+                    "name": "reactjs",
+                    "value": 119
+                },
+                {
+                    "name": "pandas",
+                    "value": 81
+                }
+            ],
+            "radius": "55%",
+            "center": [
+                "50%",
+                "50%"
+            ],
+            "roseType": "radius",
+            "label": {
+                "show": true,
+                "position": "top",
+                "color": "rgba(0, 0, 0, 0.3)",
+                "margin": 8
+            },
+            "tooltip": {
+                "show": true,
+                "trigger": "item",
+                "triggerOn": "mousemove|click",
+                "axisPointer": {
+                    "type": "line"
+                },
+                "showContent": true,
+                "alwaysShowContent": false,
+                "showDelay": 0,
+                "hideDelay": 100,
+                "formatter": "{a} <br/>{b}: {c} ({d}%)",
+                "textStyle": {
+                    "fontSize": 14
+                },
+                "borderWidth": 0,
+                "padding": 5
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "python",
+                "javascript",
+                "java",
+                "html",
+                "c++",
+                "reactjs",
+                "pandas"
+            ],
+            "selected": {},
+            "show": false,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5
+    },
+    "title": [
+        {
+            "text": " stackoverflow  tot \u997c\u72b6\u56fe",
+            "left": "center",
+            "top": "20",
+            "padding": 5,
+            "itemGap": 10,
+            "textStyle": {
+                "color": "#000000"
+            }
+        }
+    ]
+};
+        chart_7f22ec756ef847aea99952be1a4257ab.setOption(option_7f22ec756ef847aea99952be1a4257ab);
+    </script>
+    </div>
+
+    <script>
+    </script>
+    <script>
+        (function() {
+            containers = document.getElementsByClassName("chart-container");
+            if(containers.length > 0) {
+                containers[0].style.display = "block";
+            }
+        })()
+
+        function showChart(evt, chartID) {
+            let containers = document.getElementsByClassName("chart-container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].style.display = "none";
+            }
+
+            let tablinks = document.getElementsByClassName("tablinks");
+            for (let i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = "tablinks";
+            }
+
+            document.getElementById(chartID).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
